@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Assignment-03</title>
+       <!-- tailwind and daisyUI links -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+       <!-- google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+       <style>
+           .google-font {
+               font-family: "Manrope", sans-serif;
+           }
+       </style>
+       <!-- tailwind customize links -->
+       <script>
+           tailwind.config = {
+               theme: {
+                   extend: {
+                       colors: {
+                           'back-btn': '#ABEF5F',
+                       }
+                   }
+               }
+           }
+       </script>
+       <!-- font awesome links -->
+       <script src="https://kit.fontawesome.com/a605e9e2d5.js" crossorigin="anonymous"></script>
+   </head>
+   
+   <body class="google-font w-11/12 mx-auto">
+       <header>
+          <nav class="flex gap-3">
+              <div class="w-3/12 border ">
+                    <h1> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
+              </div>
+              <div class="w-6/12 flex justify-evenly border">
+                  <a>Home</a>
+                  <a>Service</a>
+                  <a>Portfolio</a>
+                  <a>Blogs</a>
+                  <a>Contact Us</a>
+              </div>
+              <div class="w-3/12 border flex justify-around">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="bg-back-btn">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-md"></i> </button>
+              </div>
+           </nav>
+           <div>
+               <div class="flex justify-center"><img src="./assets/banner.png" alt=""></div>
+               <div class="flex justify-center">
+                  <h1>A barn house of this design has a <br> striking appearance</h1>
+                </div>
+                <div class="flex justify-center">
+                  <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                  metal <br>accents, and large windows that flood the space with natural light.</p>
+               </div>
+               <div class="flex justify-center">
+                <button>View details <i class="fa-solid fa-arrow-right"></i> </button>
+               </div>
+           </div>
+       </header>
+       <main>
+   
+       </main>
+       <footer>
+   
+       </footer>
+   </body>
+
+</html>
