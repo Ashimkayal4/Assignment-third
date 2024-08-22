@@ -23,6 +23,7 @@
                    extend: {
                        colors: {
                            'back-btn': '#ABEF5F',
+                           'back-color': '#f4f4f4'
                        }
                    }
                }
@@ -34,39 +35,82 @@
    
    <body class="google-font w-11/12 mx-auto">
        <header>
-          <nav class="flex gap-3">
+          <nav class="flex gap-3 mt-8 max-[640px]:justify-between">
               <div class="w-3/12 border ">
-                    <h1> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
+                    <h1 class="font-bold text-1xl"> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
               </div>
-              <div class="w-6/12 flex justify-evenly border">
+              <div class="w-6/12 flex justify-evenly border max-sm:hidden">
                   <a>Home</a>
                   <a>Service</a>
                   <a>Portfolio</a>
                   <a>Blogs</a>
                   <a>Contact Us</a>
               </div>
-              <div class="w-3/12 border flex justify-around">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <button class="bg-back-btn">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-md"></i> </button>
+              <div class="w-3/12 border flex justify-around max-sm:hidden">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <button class="bg-back-btn p-2 rounded-lg font-bold">Book Consult <i   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-lg p-1"></i> </button>
+              </div>
+              <div class="min-[640px]:hidden">
+                <i class="fa-solid fa-bars"></i>
               </div>
            </nav>
+
+           <!-- banner -->
            <div>
                <div class="flex justify-center"><img src="./assets/banner.png" alt=""></div>
                <div class="flex justify-center">
-                  <h1>A barn house of this design has a <br> striking appearance</h1>
+                  <h1 class="font-extrabold text-4xl my-4">A barn house of this design has a <br> striking appearance</h1>
                 </div>
                 <div class="flex justify-center">
-                  <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                  <p class="">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
                   metal <br>accents, and large windows that flood the space with natural light.</p>
                </div>
                <div class="flex justify-center">
-                <button>View details <i class="fa-solid fa-arrow-right"></i> </button>
+                  <button class="bg-back-btn p-2 rounded-lg mt-4 max-[640px]:w-11/12 ">View details <i class="fa-solid fa-arrow-right -rotate-45"></i> </button>
                </div>
            </div>
        </header>
        <main>
-   
+            <section class="bg-back-color p-4 border">
+                <div>
+                    <img src="./assets/Vector.png" class="max-[640px]:hidden" alt="">
+                </div>
+
+                <div class="flex max-[640px]:flex-col w-11/12 mx-auto">
+                    <div>
+                        <div>
+                            <button class="bg-white p-2 rounded-md my-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+                            <h1 class="font-extrabold text-4xl mb-4">We design thoughtful, <br> liveable spaces</h1>
+                            <p class="my-4">The barn house captivates with its blend of rustic charm and <br>
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                        <div class="flex bg-white p-2 mb-2 mr-6 rounded-md">
+                            <div>
+                                <img src="./assets/commercial.png"  alt="">
+                            </div>
+                            <div class="mx-6">
+                                <h1 class="font-bold">Commercial</h1>
+                                <p>
+                                    The barn house captivates with its blend <br> of rustic charm and modern.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="flex bg-white p-2 mr-6 rounded-md">
+                            <div><img src="./assets/residential.png" alt=""></div>
+                            <div class="mx-6">
+                                <h1>Residential</h1>
+                                <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/Rectangle.png" class="h-5/6 ml-6 max-[640px]:w-11/12" alt="">
+
+                    </div>
+                </div>
+            </section>
        </main>
        <footer>
    
