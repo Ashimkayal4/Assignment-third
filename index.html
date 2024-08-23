@@ -23,7 +23,8 @@
                    extend: {
                        colors: {
                            'back-btn': '#ABEF5F',
-                           'back-color': '#f4f4f4',
+                           'header-color': '#fefefe',
+                           'back-color':'#f4f4f4',
                            cart1: '#E7C1D3',
                            cart2: '#EFDA6E',
                            cart3: '#A4DAC3',
@@ -37,9 +38,9 @@
        <script src="https://kit.fontawesome.com/a605e9e2d5.js" crossorigin="anonymous"></script>
    </head>
    
-   <body class="google-font w-11/12 mx-auto">
-       <header>
-          <nav class="flex gap-3 mt-8 max-[640px]:justify-between">
+   <body class="google-font w-full bg-header-color">
+       <header class="w-11/12 mx-auto ">
+          <nav class="flex gap-3 pt-4 max-[640px]:justify-between">
               <div class="w-3/12 border ">
                     <h1 class="font-bold text-1xl"> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
               </div>
@@ -75,17 +76,19 @@
                </div>
            </div>
        </header>
-       <main>
-            <section class="bg-back-color p-4 border">
+       <main class="bg-back-color">
+            <section class=" p-4 my-8 w-11/12 mx-auto">
                 <div>
                     <img src="./assets/Vector.png" class="max-[640px]:hidden" alt="">
                 </div>
 
-                <div class="flex max-[640px]:flex-col w-11/12 mx-auto">
+                <div class="flex max-[640px]:flex-col justify-center mx-auto">
                     <div>
                         <div>
-                            <button class="bg-white p-2 rounded-md my-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
-                            <h1 class="font-extrabold text-4xl mb-4">We design thoughtful, <br> liveable spaces</h1>
+                            <div class="max-[640px]:flex justify-center">
+                                <button class="bg-white p-2 rounded-md my-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+                            </div>
+                            <h1 class="font-extrabold text-4xl mb-4 max-[640px]:text-2xl">We design thoughtful, <br> liveable spaces</h1>
                             <p class="my-4">The barn house captivates with its blend of rustic charm and <br>
                             modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
@@ -110,21 +113,22 @@
                         </div>
                     </div>
                     <div>
-                        <img src="./assets/Rectangle.png" class="h-5/6 ml-6 max-[640px]:w-11/12" alt="">
+                        <img src="./assets/Rectangle.png" class="h-5/6 mt-4 max-[640px]:" alt="">
 
                     </div>
                 </div>
             </section>
             <!-- self section -->
-            <section>
+            <section class="mb-8 bg-white">
                 <div class="h-80 border">
 
                 </div>
             </section>
             
-            <section>
+            <section class="w-11/12 mx-auto">
                 <div class="">
-                    <div class="justify-center flex"><button ><i class="fa-solid fa-arrow-right bg-back-btn"></i>How we works</button></div>
+                    <div class="flex max-[640px]:flex justify-center"><button class="bg-white p-2 rounded-md"><i class="fa-solid fa-arrow-right bg-back-btn"></i>How we works</button></div>
+                    <h1 class="flex justify-center font-extrabold  text-3xl my-4">Our Work Process</h1>
                     <p class="justify-center flex">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek
                     metal accents.</p>
                 </div>
