@@ -29,6 +29,9 @@
                            cart2: '#EFDA6E',
                            cart3: '#A4DAC3',
                            cart4: '#77AAEA',
+                           footer:'#1c1c1c',
+                           font:'#E9E9E9',
+                           font2:'#737373',
                        }
                    }
                }
@@ -41,20 +44,20 @@
    <body class="google-font w-full bg-header-color">
        <header class="w-11/12 mx-auto ">
           <nav class="flex gap-3 pt-4 max-[640px]:justify-between">
-              <div class="w-3/12 border ">
+              <div class="w-3/12 ">
                     <h1 class="font-bold text-1xl"> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
               </div>
-              <div class="w-6/12 flex justify-evenly border max-sm:hidden">
+              <div class="w-6/12 flex justify-evenly max-sm:hidden">
                   <a>Home</a>
                   <a>Service</a>
                   <a>Portfolio</a>
                   <a>Blogs</a>
                   <a>Contact Us</a>
               </div>
-              <div class="w-3/12 border flex justify-around max-sm:hidden">
+              <div class="w-3/12 flex justify-around max-sm:hidden">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <i class="fa-solid fa-cart-shopping"></i>
-                  <button class="bg-back-btn p-2 rounded-lg font-bold">Book Consult <i   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-lg p-1"></i> </button>
+                  <button class="bg-back-btn p-2 rounded-lg font-bold">Book Consult <i   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-xl p-1"></i> </button>
               </div>
               <div class="min-[640px]:hidden">
                 <i class="fa-solid fa-bars"></i>
@@ -211,30 +214,57 @@
             </section>
 
             <section class="mt-6" style="background-image: url(./assets/bg.jpg);">
-                <div class="grid justify-center items-center mb-4">
-                    <button><i class="fa-solid fa-arrow-right bg-back-btn"></i> Let's connect</button>
+               <div class="max-sm:w-11/12 mx-auto">
+                <div class="mb-4">
+                    <div class="flex justify-center">
+                        <button><i class="fa-solid fa-arrow-right bg-back-btn"></i> Let's connect</button>
+                    </div>
                     <h1 class="font-extrabold text-3xl flex justify-center mb-2">Let’s Discuss Next Project</h1>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek
-                    metal accents.</p> 
+                    <p class="flex justify-center">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood,
+                        sleek
+                        metal accents.</p>
                 </div>
-                <div class="flex justify-center mb-4 gap-4 max-[640px]:flex-col" >
-                    <input type="text" class=" lg:w-[470px] h-[60px]" placeholder="First Name*">
-                    <input type="text" class=" lg:w-[470px] h-[60px]" placeholder="Last Name*"> 
-                    
+                <div class="flex justify-center mb-4 gap-4 max-[640px]:flex-col">
+                    <input type="text" class=" lg:w-[470px] h-[60px] max-sm:w-[340px] rounded-md" placeholder="First Name*">
+                    <input type="text" class=" lg:w-[470px] h-[60px] max-sm:w-[340px] rounded-md" placeholder="Last Name*">
+                
                 </div>
                 <div class="flex justify-center gap-4 max-[640px]:flex-col">
-                    <input type="text"  class=" lg:w-[470px] h-[60px]" placeholder="Last Name*">
-                    <input type="text"  class=" lg:w-[470px] h-[60px]" placeholder="Last Name*">
+                    <input type="text" class=" lg:w-[470px] h-[60px] max-sm:w-[340px] rounded-md" placeholder="Last Name*">
+                    <input type="text" class=" lg:w-[470px] h-[60px] max-sm:w-[340px] rounded-md" placeholder="Last Name*">
                 </div>
-                <div class="grid justify-center mt-4">
-                    <input type="text" placeholder="Write your text here">
-                    <button>Send mail<i class="fa-solid fa-arrow-right bg-back-btn"></i></button>
+                <div class="flex justify-center mt-4">
+                    <input type="text" class=" rounded-lg lg:w-[960px] h-[240px] max-sm:w-[340px]" placeholder="Write your text here">
+                </div>
+                <div class="flex justify-center mt-4 max-sm:w-[340px]">
+                    <button class="bg-back-btn lg:w-[960px] h-[55px] max-sm:w-[340px] font-bold rounded-md">Send mail <i
+                    class="fa-solid fa-arrow-right bg-back-btn -rotate-45 bg-black text-white p-1 rounded-xl"></i></button>
                 </div>
 
+               </div>
             </section>
        </main>
-       <footer>
-   
+
+       <footer class="mt-4 bg-footer lg:p-8 max-sm:p-4">
+          <div class="max-sm:w-11/12 lg:w-2/3 mx-auto">
+               <div>
+                   <h1 class="font-extrabold text-1xl flex justify-center text-font"> <i class="fa-solid fa-arrow-right bg-back-btn text-font2 p-1 rounded-xl -rotate-45"></i>
+                     Rinterio</h1>
+                     <p class="flex justify-center text-font2 mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood sleek metal accents.</p>
+               </div>
+             
+               <div class="flex justify-center mt-4 lg:justify-around  max-sm:flex-col">
+                   <a class="flex justify-center text-font max-sm:mt-4">Home</a>
+                   <a class="flex justify-center text-font max-sm:mt-4">Service</a>
+                   <a class="flex justify-center text-font max-sm:mt-4">Portfolio</a>
+                   <a class="flex justify-center text-font max-sm:mt-4">Blogs</a>
+                   <a class="flex justify-center text-font max-sm:mt-4">Contact Us</a>
+               </div>
+               <div class="flex justify-center mt-4">
+                   <button class="bg-back-btn p-2 rounded-lg font-bold">Book Consult <i
+                   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-xl p-1"></i> </button>
+               </div>
+          </div>
        </footer>
    </body>
 
