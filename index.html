@@ -34,6 +34,8 @@
                            font2:'#737373',
                            self:'#85c1e9',
                            self2:'#eb984e',
+                           icon: '#fffff',
+                           explore:'#EEFCDF',
                        }
                    }
                }
@@ -47,7 +49,7 @@
        <header class="w-11/12 mx-auto ">
           <nav class="flex gap-3 pt-4 max-[640px]:justify-between">
               <div class="w-3/12 ">
-                    <h1 class="font-bold text-1xl"> <i class="fa-solid fa-arrow-right bg-back-btn"></i> Rinterio</h1>
+                    <h1 class="font-bold text-1xl"> <i class="fa-solid fa-arrow-right bg-back-btn rounded-xl"></i> Rinterio</h1>
               </div>
               <div class="w-6/12 flex justify-evenly max-sm:hidden">
                   <a>Home</a>
@@ -57,9 +59,9 @@
                   <a>Contact Us</a>
               </div>
               <div class="w-3/12 flex justify-around max-sm:hidden">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass bg-icon"></i>
                   <i class="fa-solid fa-cart-shopping"></i>
-                  <button class="bg-back-btn p-2 rounded-lg font-bold">Book Consult <i   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-xl p-1"></i> </button>
+                  <button class="bg-back-btn h-10 w-36 rounded-lg font-bold">Book Consult <i   class="fa-solid fa-arrow-right bg-black text-white -rotate-45 rounded-xl p-1"></i> </button>
               </div>
               <div class="min-[640px]:hidden">
                 <i class="fa-solid fa-bars"></i>
@@ -95,11 +97,11 @@
                             <div class="max-[640px]:flex justify-center">
                                 <button class="bg-white p-2 rounded-md my-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
                             </div>
-                            <h1 class="font-extrabold text-4xl mb-4 max-[640px]:text-2xl">We design thoughtful, <br> liveable spaces</h1>
-                            <p class="my-4">The barn house captivates with its blend of rustic charm and <br>
+                            <h1 class="font-extrabold text-4xl mb-6 max-[640px]:text-2xl">We design thoughtful, <br> liveable spaces</h1>
+                            <p class="my-6">The barn house captivates with its blend of rustic charm and <br>
                             modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
-                        <div class="flex bg-white p-2 mb-2 mr-6 rounded-md">
+                        <div class="flex bg-white p-2 mb-6 mr-6 rounded-md">
                             <div>
                                 <img src="./assets/commercial.png"  alt="">
                             </div>
@@ -111,7 +113,7 @@
 
                             </div>
                         </div>
-                        <div class="flex bg-white p-2 mr-6 rounded-md">
+                        <div class="flex bg-white p-2 mr-6 mb-6 rounded-md">
                             <div><img src="./assets/residential.png" alt=""></div>
                             <div class="mx-6">
                                 <h1>Residential</h1>
@@ -134,7 +136,7 @@
                     </div>
                     <!-- daisyUi cart -->
                     <div class="flex justify-around max-sm:flex-col gap-4"> 
-                        <div class="card bg-self lg:w-96 max-sm:w-[360px] mx-auto shadow-xl">
+                        <div class="card bg-self lg:w-96 max-sm:w-11/12 mx-auto shadow-xl">
                             <div class="card-body">
                                 <h2 class="card-title">1.Functionality</h2>
                                 <p><span class="font-bold">customize layout : </span>Consider flexible spaces that can adapt to your changing life style <br>
@@ -144,7 +146,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-self2 lg:w-96 max-sm:w-[360px] mx-auto  shadow-xl">
+                        <div class="card bg-self2 lg:w-96 max-sm:w-11/12 mx-auto  shadow-xl">
                             <div class="card-body">
                                 <h2 class="card-title">2. Elegance</h2>
                                 <p><span class="font-bold">Quality materials :</span> Invest in durable and high-quality materials that enhance both beauty and longevity <br> <span class="font-bold">Attention to detail :</span> Pay close attention to finishes,texture and lighting. </p>
@@ -153,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-self lg:w-96 max-sm:w-[360px] mx-auto  shadow-xl">
+                        <div class="card bg-self lg:w-96 max-sm:w-11/12 mx-auto  shadow-xl">
                             <div class="card-body">
                                 <h2 class="card-title">3.Sustainability</h2>
                                 <p><span class="font-bold">Eco-friendly materials:</span> Choose sustainable materials that have minimal environmental impact <br> <span>Reduce waste :</span> Minimize waste during the design and construction process by selecting and insulation</p>
@@ -210,10 +212,10 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mx-auto mt-4 border">
-                <div>
-                    <div>
-                        <div class="flex justify-center"><button class="font-extrabold bg-back-btn"><i class="fa-solid fa-arrow-right"></i>Explore Our Latest work</button></div>
+            <section class=" mt-4 bg-white ">
+                <div class="w-11/12 mx-auto ">
+                    <div class="pt-4">
+                        <div class="flex justify-center mt-4"><button class="font-extrabold bg-explore p-1"><i class="fa-solid fa-arrow-right"></i>Explore Our Latest work</button></div>
                         <div>
                             <h1 class="flex justify-center font-extrabold my-4 text-3xl">Our Latest Portfolio</h1>
                             <p class="flex justify-center">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek
@@ -221,31 +223,31 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-10 border max-[640px]:flex-col">
-                        <div class="flex border p-4 max-[640px]:flex-col">
+                    <div class="flex gap-10 mt-6 max-[640px]:flex-col">
+                        <div class="flex border rounded-xl p-4 lg:w-3/4 max-[640px]:flex-col">
                             <img src="./assets/img1.png" alt="">
-                            <div>
-                                <h1>Commercial</h1>
-                                <p>The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with its blend of <br> rustic
+                            <div class="mt-4 max-sm:ml-8">
+                                <h1 class="font-extrabold mb-4">Commercial</h1>
+                                <p class="mb-4">The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with its blend of <br> rustic
                                 charm and modern .</p>
-                                <button>View details <i class="fa-solid fa-arrow-right bg-back-btn"></i></button>
+                                <button class="font-bold">View details <i class="fa-solid fa-arrow-right bg-back-btn rounded-xl -rotate-45 p-1"></i></button>
                             </div>
                         </div> 
-                        <img src="./assets/img2.png" class="border p-4" alt="">
+                        <img src="./assets/img2.png" class="border rounded-xl p-4" alt="">
                     </div>
 
                     <div class="flex justify-around gap-2 mt-6 max-[640px]:flex-col">
-                        <img src="./assets/img3.png" class="border p-4" alt="">
+                        <img src="./assets/img3.png" class="border rounded-xl p-4 lg:w-1/4" alt="">
                         
-                        <div class="flex border max-[640px]:flex-col">
-                            <img src="./assets/img4.png" class= "border" alt="">
-                            <div class="m-4">
-                                <h1>Commercial</h1>
-                                <p>The barn house captivates with <br> its blend of rustic charm and <br>modern.</p>
-                                <button>View details <i class="fa-solid fa-arrow-right bg-back-btn"></i></button>
+                        <div class="flex border rounded-xl lg:w-2/4 max-[640px]:flex-col">
+                            <img src="./assets/img4.png" class="p-6" alt="">
+                            <div class="mt-4 max-sm:ml-8">
+                                <h1 class="font-extrabold mb-4">Commercial</h1>
+                                <p class="mb-4">The barn house captivates with <br> its blend of rustic charm and <br>modern.</p>
+                                <button class="font-bold">View details <i class="fa-solid fa-arrow-right bg-back-btn rounded-xl -rotate-45 p-1"></i></button>
                             </div>
                         </div>
-                        <img src="./assets/img5.png" class="border p-4" alt="">
+                        <img src="./assets/img5.png" class="border rounded-xl lg:w-1/4 p-4" alt="">
                     </div>
                 </div>
             </section>
